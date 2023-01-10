@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive website</title>
+    <style>
+        body{
+            max-width: 800px;
+            margin: 0px auto;
+            border: 1px solid rebeccapurple; 
+        }
+        h1{
+            font-size: 10vw;
+        }
+        .author img{
+            width: 100%;
+        }
+        .container-two{
+            display: flex;
+        }
+        .container-two .split{
+            width: 50%;
+        }
+        /* make image responsive inside */
+        .split img{
+            width: 100%;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .food{
+            border: 2px solid indianred;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .food img{
+            width: 100%;
+        }
+        @media screen and (max-width: 577px) {
+            .container-two{
+                flex-direction: column-reverse;
+            }
+            .container-two .split{
+                width: 100%;
+            }
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width: 577px) and (max-width: 700px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>My Responsive Website</h1>
+    </section>
+    <section class="author">
+        <h3>Author</h3>
+        <img src="./imges/banner1.png" alt="">
+    </section>
+    <section>
+        <h2>Two Parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="./imges/author.jpg" alt="">
+            </div>
+            <div class="split">
+                <img src="./imges/banner1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Multi Column Responsive</h2>
+        <div class="container">
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-1</h2>
+                <h4>price: 1100</h4>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, iure. Aliquam molestias sint quos. Corporis, libero veritatis. Doloremque, ad sed excepturi unde, possimus molestiae corrupti expedita ratione numquam cum et?</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-2</h2>
+                <h4>price: 2100</h4>
+                <P>Tempore laboriosam odit eaque quo esse doloremque temporibus veniam expedita quasi unde quas placeat, aliquam delectus repellendus dignissimos eligendi omnis itaque velit exercitationem corrupti. Culpa saepe incidunt odit iusto sed.</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-3</h2>
+                <h4>price: 3100</h4>
+                <P>Repellat nam, enim exercitationem, illum quo eveniet voluptatibus, amet unde dicta nesciunt voluptas sapiente et dolores necessitatibus placeat minima! Porro pariatur officia totam inventore quam, unde sit eum alias magnam.</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-4</h2>
+                <h4>price: 4100</h4>
+                <P>Atque similique illo, incidunt pariatur corrupti aliquam, laborum iste exercitationem dolores accusantium ducimus non maxime aperiam. Velit deserunt ullam, ad nobis cumque harum dolor aspernatur eligendi molestiae nam veniam ut.</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-5</h2>
+                <h4>price: 5100</h4>
+                <P>Enim ipsum pariatur illo eveniet officia, veniam ipsa, dicta quas non nobis fuga dignissimos voluptas eos explicabo placeat facere iusto omnis. Voluptate, delectus doloremque? Eius, repellendus? Reiciendis exercitationem vero pariatur.</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-6</h2>
+                <h4>price: 6100</h4>
+                <P>Accusamus deleniti quis dolore voluptas eius quos. Illo, molestiae ipsum impedit quo temporibus accusantium eos architecto nobis sit reprehenderit repellat eligendi consectetur, hic omnis? Error laborum maiores alias rerum architecto.</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-7</h2>
+                <h4>price: 7100</h4>
+                <P>Debitis nihil vel at accusantium nostrum natus, dolores ad veniam possimus nemo laborum quasi alias itaque minima qui deserunt ipsa! Mollitia dolorem quod modi laborum sequi dignissimos, architecto aspernatur ipsam!</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-8</h2>
+                <h4>price: 8100</h4>
+                <P>Ipsa quam mollitia praesentium atque ab rerum dignissimos dolorem iste commodi autem? Quos laboriosam fugit accusamus iure enim, nisi magni nam maiores corporis magnam fugiat voluptatibus, possimus consectetur autem nihil.</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-9</h2>
+                <h4>price: 9100</h4>
+                <P>Distinctio ut nemo quasi natus, ratione tenetur, sapiente molestias ducimus magnam nesciunt neque sequi, ea vitae molestiae dolores voluptatem? Distinctio illum possimus laudantium! Et ducimus ex expedita maiores! Perspiciatis, laudantium!</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-10</h2>
+                <h4>price: 10100</h4>
+                <P>Eum at quibusdam fugit quae eos amet illo accusantium totam culpa harum sequi praesentium provident, quidem fuga laudantium nisi suscipit rem hic recusandae consequatur adipisci! Ratione incidunt necessitatibus sint ducimus!</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-11</h2>
+                <h4>price: 11100</h4>
+                <P>Nemo enim rem quae facilis totam officiis minus praesentium itaque aspernatur, optio expedita repellat culpa eveniet reprehenderit ducimus magnam corrupti quasi a doloremque. Alias accusamus esse placeat adipisci harum optio!</P>
+    
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="./imges/author.jpg" alt="">
+                <h2>Item-12</h2>
+                <h4>price: 12100</h4>
+                <P>Dolores dolor quis ab molestias magnam aut molestiae? Quis, magnam. Ea consectetur quo ducimus distinctio officia, animi amet deleniti voluptatem molestiae eligendi consequatur enim dolorum et iusto? Delectus, modi repellendus?</P>
+    
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- 
+        1. viewport meta tag
+        2. CSS Relative Unit
+        3. Responsive Image (Fluid Image)
+        4. Body max-width and margin auto
+        5. Responsive Split Screen using flex (2 column section)
+        6. Grid Responsive (Multi column)
+        7. Responsive Menu (Bootstrap Responsive) 
+     -->
+</body>
+</html>
